@@ -1,0 +1,70 @@
+﻿.nhap{
+    text-align: center;
+    width: auto;
+    height: 1000px;
+}
+h1{
+    text-align: center;
+}
+.hei{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+.sanpham:hover{
+    overflow: hidden;
+}
+.sanpham{
+    width: 30%;
+    overflow: hidden;
+}
+.sanpham:hover .b-wrapper{
+    transition: 2s;
+    left:0;
+}
+.b-wrapper{
+    position: absolute;
+    left: -100%;
+    background: rgba(239,95,33,0.64);
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+.b-foont-left{
+    width: 100%;
+    margin-top: 30%;
+    color: white;
+}
+.rss{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+    .rss img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+@media (max-width:665px)  {
+    .hei {
+        display: inline-block;
+    }
+
+    .sanpham {
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (orientation: portrait) {
+    .hei {
+        display: inline-block;
+    }
+    .sanpham {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+

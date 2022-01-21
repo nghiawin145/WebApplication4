@@ -1,0 +1,91 @@
+﻿body {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;/*font coppy*/
+}
+form {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif; /*font coppy*/
+}
+.product_infor-item {
+    margin-top: 50px;
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    overflow: hidden; /*ẩn phần dư*/
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.7); /*tạo độ bóng*/
+    /*position: absolute;
+    transform: translate(-50%,-50%);*/
+    /*margin-right:18px;
+    margin-left: 2px;*/
+}
+.product__infor-img{
+    height: 385px;
+    position: relative;
+}
+.product__infor-img > img{
+    width: 100%;
+}
+.over__lay{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.product_infor-item:hover .over__lay{
+    visibility: visible;
+    animation: fadeln 0.5s;
+}
+.btn__buy {
+    background-color: #34e7e4;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: #000;
+}
+.btn__buy:hover{
+    background-color: #eb4b4b;
+    color: #ffff;
+    transition: all step-end 0.2s;
+}
+.roduct__infor-detail{
+    padding: 0px 10px;
+}
+.product__name{
+    margin-top: 5px;
+    text-align: center;
+}
+.product__price{
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-around
+}
+.product__price-initial{
+    color: #c0392b;
+}
+.product__price-discout{
+    text-decoration: line-through;
+    color: red;
+}
+.items{
+    width:88%;
+    display:flex;
+    justify-content: space-around;
+    display: -webkit-box;
+    margin:auto;
+    overflow:hidden;
+}
+
+
+
+
